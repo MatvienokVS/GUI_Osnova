@@ -2,10 +2,6 @@
 
 import tkinter as tk
 from tkinter import *
-import os
-import sys
-import imp
-from 'menu\' import menu_main
 
 
 win_main = tk.Tk()
@@ -21,7 +17,7 @@ win_main.resizable(False, False)						# Запрет на изменение р�
 icon = PhotoImage(file='userform/photo.png')			# Добавление иконки
 win_main.iconphoto(False, icon)
 
-menu_main()
+main_menu()
 
 
 win_main.mainloop()
