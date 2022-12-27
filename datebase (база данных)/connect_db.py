@@ -1,9 +1,17 @@
 import sqlite3
 
 
-def conn():
-    with sqlite3.connect('datebase.bd') as db:
-        print(('Подключен к базе данных'))
+def con():
+    try:
+        con = sqlite3.connect('datebase.bd')
+        cursor = con.cursor()
+        print('Подключен к SQLite datebase БДДС реф')
+    except sqlite3.Error as error:
+        print("Ошибка при работе с SQLite", error)
+    # finally:
+    #    if (con):
+    #        con.close()
+    #        print("Соединение с SQLite закрыто")
 
 
-conn()
+con()
