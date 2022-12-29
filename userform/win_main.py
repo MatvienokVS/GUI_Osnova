@@ -17,7 +17,7 @@ win_main.resizable(False, False)						# Запрет на изменение р�
 icon = PhotoImage(file='userform/photo.png')			# Добавление иконки
 win_main.iconphoto(False, icon)
 
-main_menu()
+# main_menu()
 
 
 win_main.mainloop()
