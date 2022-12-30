@@ -16,7 +16,7 @@ class App(tk.Tk):
         self.geometry(f"{h}x{w}+300+150")
         self.minsize(h, w)
         self.maxsize(1200, 700)
-        #self.iconphoto(False, tk.PhotoImage(file='photo.png'))
+        self.iconphoto(False, tk.PhotoImage(file='photo.png'))
         # Фрейм левый верхний
         self.frame_1 = tk.Frame(master, bg='#abcdef').place(
             relx=0, rely=0, relwidth=0.2, relheight=1)
@@ -55,12 +55,12 @@ class App(tk.Tk):
 
         def cbx_otdel():
             self.cbx_otdel = ttk.Combobox(
-                self.frame_2, values=('ИП"Пенкин" ИП"Матвиенок"')).place(relx=0.7, rely=0.01, relwidth=0.295)
+                self.frame_2, values=('ИП"Пенкин" ИП"Матвиенок"')).place(relx=0.7, rely=0.01, relwidth=0.2)
         cbx_otdel()
 
         def lbl_frame_2():
             self.lbl_otdel = tk.Label(
-                text='Наименование организации', bg='#ab6632', font=('Franklin Gothic Book', 10, 'bold')).place(relx=0.5, rely=0.01)
+                text='Наименование организации', bg='#ab6632', font=('Franklin Gothic Book', 10, 'bold')).place(relx=0.3, rely=0.01)
             self.lbl_date = tk.Label(
                 text='Дата', bg='#ab6632', font=('Franklin Gothic Book', 10)).place(relx=0.657, rely=0.05)
 
