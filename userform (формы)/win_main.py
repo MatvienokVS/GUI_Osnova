@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from tkinter import *
-
+from tkinter import ttk
 
 win_main = tk.Tk()
 
@@ -16,5 +16,8 @@ win_main.title('Бюджет движения денежных средств') 
 win_main.resizable(False, False)  						# Запрет на изменение размера
 icon = PhotoImage(file='userform (формы)/photo.png')  	# Добавление иконки
 win_main.iconphoto(False, icon)
+
+#btn_exit = btn_exit()
+
 
 win_main.mainloop()
