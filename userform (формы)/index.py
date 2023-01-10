@@ -1,4 +1,4 @@
 # Переменные размера окна win_main
 
-heidth = 1500
-width = 800
+heidth = 1000
+width = 600
