@@ -75,6 +75,20 @@ class App(tk.Tk):
         enter_Enpty()
 
 
+<<<<<<< HEAD:userform (формы)/win_main.py
 if __name__ == "__main__":
     apps = App(path=".")
     apps.mainloop()
+=======
+win_main.geometry(f'{heidth}x{width}+200+100')			# Геометрия окна
+win_main.config(bg='#00abdd')							# Фон окна
+win_main.title('Бюджет движения денежных средств')		# Название окна
+win_main.resizable(False, False)						# Запрет на изменение размера
+icon = PhotoImage(file='userform/photo.png')			# Добавление иконки
+win_main.iconphoto(False, icon)
+
+# main_menu()
+
+
+win_main.mainloop()
+>>>>>>> menu:userform/win_main.py
